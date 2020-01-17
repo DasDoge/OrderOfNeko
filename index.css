@@ -1,0 +1,139 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-weight: 500;
+}
+
+#navbar {
+	top: 0;
+	width: 100%;
+	height: 4em;
+	background-color: #ca20a188;
+	position: fixed;
+	font-family: 'Gabriola';
+	font-size: 22px;
+	backdrop-filter: blur(8px);
+}
+
+#navbar-inner {
+	height: 100%;
+	padding: 0.5em 0;
+	box-sizing: border-box;
+}
+
+#navbar-header {
+	float: left;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 5%;
+}
+
+#navbar ul {
+	margin: 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 1em 10% 0 0;
+	white-space: nowrap;
+	vertical-align: middle;
+}
+
+#navbar li {
+	float: left;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.25s;
+	text-shadow: 0 0 3px black ;
+}
+
+a:hover {
+	color: deepskyblue;
+}
+
+a:visited {
+	color: white;
+}
+
+a:visited:hover {
+	color: deepskyblue;
+}
+
+.logo {
+	max-height: 100%;
+	width: auto;
+	float: left;
+}
+
+#main {
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#title-cover {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/welcome.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: table;
+}
+
+#title-inner {
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 32px;
+	color: white;
+	text-shadow: 0 0 8px black;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	text-align: center;
+	width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+	#title-cover {
+		height: 350px;
+		top: unset;
+	}
+
+	#navbar {
+		position: initial;
+	}
+}
+
+#about {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/about.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: table;
+}
+
+#convert {
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url("images/convert.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: table;
+}
