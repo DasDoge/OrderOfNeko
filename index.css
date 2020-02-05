@@ -3,6 +3,7 @@ html, body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,7 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 500;
 	margin: 0;
 }
-
+                  
 hr {
 	border: 0.1em solid black;
 	width: 7%;
@@ -140,8 +141,9 @@ a:visited:hover {
 }
 
 #join {
-	width: 20%;
-	height: 10%;
+	width: auto;
+	height: auto;
+	padding: 0.5em;
 	border-radius: 20px;
 	border: 1px solid white;
 	color: white;
@@ -233,9 +235,11 @@ a:visited:hover {
 }
 
 #foot {
-	display: table-cell;
+	display: block;
 	background-color: #1E1E1E;
 	color: white;
+	width: 100%;
+	text-align: center;
 }
 
 section {
