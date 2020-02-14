@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html onscroll="scroll()">
 	<head>
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="index.css">
@@ -10,7 +10,9 @@
 		<nav id="navbar" class="nav-top">
 			<div id="navbar-inner">
 				<div id="navbar-header">
-					<img class="logo" src="logo.png">
+					<a href="#main">
+						<img class="logo" src="logo.png">
+					</a>
 				</div>
 				<ul>
 					<li><a href="#about">About us</a></li>
@@ -27,40 +29,92 @@
 					<h1 class="title center">Welcome</h1>
 					<p class="subtitle">Do you also long for release from the pressure and hypocrisy of worldly things?</p>
 					<p class="subtitle">Follow us and ascend to a new level of enlightment and rid yourself of unnecessary dimensions!</p>
-					<button id="join">Join us!<br><h6>You won't regret it</h6></button>
+					<a href="#guide"><button id="join">Join us!<br><h6>You won't regret it</h6></button></a>
 					
 				</div>
 			</div>
-			<section id="about">
-				<div id="about-inner">
+			<section id="about" class="segment">
 					<h1 class="center">Our Organisation</h1>
 					<hr>
 					<p>We pride ourselves in bringing salvation to the masses. This includes you!</p>
 					<p>While there has been a lot of criticism from the ignorant masses, fear not, for we will reach true enlightment while the world remains dark. Our guides to this light are the Divine Catgirls.</p>
 					<h3>What are Catgirls?</h3>
-					<p>Catgirls, or rather Komonomimi, are divine beings that have decided to bless our wretched world despite our natural tendency to sinning. Despite mostly being regarded as fictional, our Founding Fathers have had the privileged right to be enlightened and informed of the true beauty and power of Kemonomimi.</p>
+					<p>Catgirls, or rather Kemonomimi, are divine beings that have decided to bless our wretched world despite our natural tendency to sinning. Keep in mind that Komonomimi are not exclusively Catgirls (Nekomimi), but rather a broad term for all Divine Vessels. Despite mostly being regarded as fictional, our Founding Fathers have had the privileged right to be enlightened and informed of the true beauty and power of Kemonomimi.</p>
 					<p>As such, the Founding Fathers established the Order of Neko to bring back light to this darkened realm.</p>
-				</div>
 			</section>
-			<section id="convert">
-				<div id="convert-inner" class="shadow">
+			<section id="convert" class="segment shadow">
 					<h1 class="title">Interested?</h1>
 					<p class="subtitle">We would be glad to assist you in this monumental change for your existence in this world.</p>
 					<p>The transition is easy, painless and most importantly free, so there are no constraints that could keep you from joining us.</p>
 					<p>If you still have any questions or concerns we are glad to advise you in any uncertainties that might still linger. The more certainty you have, the more love you can experience from the Divine Catgirls.</p>
-				</div>
 			</section>
-			<section id="events">
-
+			<section id="events" class="segment shadow">
+					<h1 class="title">What activities can you experience with us?</h1>
+					<p>While joining us would be the greatest and most important event in your life, there will still be various interesting events that you can continue to experience with us and our Neko Gods!</p>
+					<table>
+                        <tr>
+                            <td>Date</td>
+                            <td>Time</td>
+							<td>Event</td>
+                            <td>Description</td>
+                            <td>Location</td>
+						</tr>
+						<tr>
+                            <td>Friday, 13th March 2020</td>
+                            <td>06:00pm GMT</td>
+							<td>Hunt for heretics</td>
+                            <td>On this day we go on the streets and spread our gospel.</td>
+                            <td>Central Train Station</td>
+						</tr>
+                        <tr>
+                            <td>Saturday, 14th March 2020</td>
+                            <td>01:00am GMT</td>
+							<td>Walpurgisnacht</td>
+                            <td>On this morning we sacrifice our caught prey to the great Kemonomimi Gods.</td>
+                            <td>Forest Meetup point</td>
+                        </tr>
+                        <tr>
+                            <td>Monday, 16th March 2020</td>
+                            <td>05:00pm GMT</td>
+                            <td>Weekly literature club</td>
+                            <td>As with every week we discuss our favorite books including Nekos or Kemonomimi in this meetup.</td>
+                            <td>Community Center</td>
+						</tr>
+					</table>
 			</section>
-			<section id="guide">
-
+			<section id="guide" class="segment shadow">
+                    <h1>How to join</h1>
+                    <p>By now you are probably wondering how to join our great cause and be saved. The process is quite simple, really.</p>
+                    <p>All you need is the will to follow our Gods and a small donation of 99€. A predetermined Waifu is not necessary.</p>
+                    <p>To join, you can send a letter to our main Church or simply sign up online by filling out the following form.</p>
+                    <!-- QUERY: add action?; add more Kemonomimi types? Less?-->
+                    <form action="index.html#guide">
+                        First name:<br>
+                        <input type="text" name="firstname" value=""><br>
+                        Surname:<br>
+                        <input type="text" name="surname" value=""><br>
+                        Waifu:<br>
+                        <input type="text" name="waifu" value=""><br>
+						Preferred Kemonomimi:<br>
+						<select id="dropdown" name="kemonomimi">
+                        	<option value="cat" checked>Catgirl 🐱 猫耳</option>
+                        	<option value="fox">Foxgirl 🐱 Kitsunemimi</option>
+                        	<option value="wolf">Wolfgirl 🐱 Okaimimimi</option>
+                        	<option value="dog">Doggirl 🐱 Inumimi</option>
+                        	<option value="racoon">Racoongirl</option>
+                        	<option value="mouse">Mousegirl</option>
+							<option value="other">Other</option>
+						</select>
+                        <br>
+                        <input type="submit" value="Join">
+                    </form>
 			</section>
 			<section id="foot">
 				<h5>Impressum:</h5>
 				<h5>Tel.: 1800-NEKO-6969420</h5>
 				<h5>Fax.: 1800-NEKO-6969427</h5>
 				<h5>E-Mail: info@i-love-catgirls.de</h5>
+				<br>
 				<p>
 					Address:<br>
 					2311 Neko Lane<br>
