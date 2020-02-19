@@ -3,7 +3,6 @@ html, body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
-	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
@@ -247,6 +246,15 @@ a:visited:hover {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	text-align: left;
 	padding: 2em 30% 2em 5%;
+}
+
+#guide input[type="submit"] {
+	font-size: 26px;
+	color: white;
+	font-style: bold;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0.5em 1.5em;
+	background: linear-gradient(to right, #ff97e7 0%,#e76bca 48%,#e954c6 52%,#ca20a1 100%);
 }
 
 #foot {

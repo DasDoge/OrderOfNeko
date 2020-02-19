@@ -20,6 +20,7 @@
 					<li><a href="#events">Events</a></li>
 					<li><a href="#guide">Neko Guide</a></li>
 					<li><a href="#impressum">Impressum</a></li>
+					<li><a href="https://api.i-love-catgirls.de">API</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -98,12 +99,12 @@
 						Preferred Kemonomimi:<br>
 						<select id="dropdown" name="kemonomimi">
                         	<option value="cat" checked>Catgirl 🐱 猫耳</option>
-                        	<option value="fox">Foxgirl 🐱 Kitsunemimi</option>
-                        	<option value="wolf">Wolfgirl 🐱 Okaimimimi</option>
-                        	<option value="dog">Doggirl 🐱 Inumimi</option>
-                        	<option value="racoon">Racoongirl</option>
-                        	<option value="mouse">Mousegirl</option>
-							<option value="other">Other</option>
+                        	<option value="fox">Foxgirl 🐱 狐耳</option>
+                        	<option value="wolf">Wolfgirl 🐱 狼耳</option>
+                        	<option value="dog">Doggirl 🐱 犬耳</option>
+                        	<option value="racoon">Racoongirl 🐱 洗熊耳</option>
+                        	<option value="mouse">Mousegirl 🐱 鼠耳</option>
+							<option value="other">Other 🐱 他</option>
 						</select>
                         <br>
                         <input type="submit" value="Join">
@@ -126,6 +127,8 @@
 		</div>
 	</body>
 	<script>
-		
+		window.addEventListener("scroll", function () {
+   			document.getElementById("navbar").classList = window.scrollY > 0 ? ["nav-scroll"] : ["nav-top"];
+		}, false);
 	</script>
 </html>
