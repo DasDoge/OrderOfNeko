@@ -176,17 +176,6 @@ a:visited:hover {
 	background: linear-gradient(to bottom, #ca20a1 0%, #e954c6 48%, #e76bca 52%, #ff97e7 100%);
 }
 
-@media only screen and (max-width: 800px) {
-	#title-cover {
-		width: auto;
-		height: auto;
-	}
-
-	#navbar {
-		position: initial;
-	}
-}
-
 #about {
 	vertical-align: middle;
 	font-size: 26px;
@@ -254,7 +243,18 @@ a:visited:hover {
 	font-style: bold;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	padding: 0.5em 1.5em;
-	background: linear-gradient(to right, #ff97e7 0%,#e76bca 48%,#e954c6 52%,#ca20a1 100%);
+	background: radial-gradient(circle, #ff97e7 0%,#e76bca 30%,#e954c6 40%,#ca20a1 100%);
+	border-radius: 6px;
+	border: 1px solid white;
+}
+
+#guide input[type="submit"]:hover {
+	border: 1px solid white;
+	filter: brightness(1.2);
+}
+
+#guide input[type="submit"]:focus {
+	background: radial-gradient(circle, #ff97e7 0%,#e76bca 35%,#e954c6 45%,#ca20a1 100%);
 }
 
 #foot {
@@ -272,7 +272,7 @@ section {
 
 .segment {
 	width: 100%;
-	height: 100%;
+	height: auto;
 	background-repeat: no-repeat;
 	background-size: cover;
 	box-sizing: border-box;
