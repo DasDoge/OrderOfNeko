@@ -4,6 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="index.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 		<link rel="icon" href="logo.png">
 		<title>Order of Neko</title>
 	</head>
@@ -53,36 +54,39 @@
 			<section id="events" class="segment shadow">
 					<h1 class="title">What activities can you experience with us?</h1>
 					<p>While joining us would be the greatest and most important event in your life, there will still be various interesting events that you can continue to experience with us and our Neko Gods!</p>
-					<table>
-                        <tr>
-                            <td>Date</td>
-                            <td>Time</td>
-							<td>Event</td>
-                            <td>Description</td>
-                            <td>Location</td>
-						</tr>
-						<tr>
-                            <td>Friday, 13th March 2020</td>
-                            <td>06:00pm GMT</td>
-							<td>Hunt for heretics</td>
-                            <td>On this day we go on the streets and spread our gospel.</td>
-                            <td>Central Train Station</td>
-						</tr>
-                        <tr>
-                            <td>Saturday, 14th March 2020</td>
-                            <td>01:00am GMT</td>
-							<td>Walpurgisnacht</td>
-                            <td>On this morning we sacrifice our caught prey to the great Kemonomimi Gods.</td>
-                            <td>Forest Meetup point</td>
-                        </tr>
-                        <tr>
-                            <td>Monday, 16th March 2020</td>
-                            <td>05:00pm GMT</td>
-                            <td>Weekly literature club</td>
-                            <td>As with every week we discuss our favorite books including Nekos or Kemonomimi in this meetup.</td>
-                            <td>Community Center</td>
-						</tr>
-					</table>
+					<div id="list-reveal" class="fas fa-chevron-down"></div>
+			</section>
+			<section id="eventlist">
+				<table>
+					<tr>
+						<th>Date</th>
+						<th>Time</th>
+						<th>Event</th>          
+						<th>Description</th>
+						<th>Location</th>
+					</tr>
+					<tr>
+						<td>Friday, 13th March 2020</td>
+						<td>06:00pm GMT</td>
+						<td>Hunt for heretics</td>
+						<td>On this day we go on the streets and spread our gospel.</td>
+						<td>Central Train Station</td>
+					</tr>
+					<tr>
+						<td>Saturday, 14th March 2020</td>
+						<td>01:00am GMT</td>
+						<td>Walpurgisnacht</td>
+						<td>On this morning we sacrifice our caught prey to the great Kemonomimi Gods.</td>
+						<td>Forest Meetup point</td>
+					</tr>
+					<tr>
+						<td>Monday, 16th March 2020</td>
+						<td>05:00pm GMT</td>
+						<td>Weekly literature club</td>
+						<td>As with every week we discuss our favorite books including Nekos or Kemonomimi in this meetup.</td>
+						<td>Community Center</td>
+					</tr>
+				</table>
 			</section>
 			<section id="guide" class="segment shadow">
                     <h1>How to join</h1>
@@ -91,20 +95,20 @@
                     <p>To join, you can send a letter to our main Church or simply sign up online by filling out the following form.</p>
                     <!-- QUERY: add action?; add more Kemonomimi types? Less?-->
                     <form action="index.html#guide">
-                        <label>First Name:<br></label>
+                        <label>First Name:</label><br>
                         <input type="text" name="firstname" value=""><br></input>
-                        <label>Surname:<br></label>
+                        <label>Surname:</label><br>
                         <input type="text" name="surname" value=""><br>
-                        <label>Waifu:<br></label>
+                        <label>Waifu:</label><br>
                         <input type="text" name="waifu" value=""><br>
-						<label>Kemonomimi:<br></label>
-						<select id="dropdown" name="kemonomimi">
-                        	<option value="cat" checked>Catgirl 🐱 猫耳</option>
-                        	<option value="fox">Foxgirl 🐱 狐耳</option>
-                        	<option value="wolf">Wolfgirl 🐱 狼耳</option>
-                        	<option value="dog">Doggirl 🐱 犬耳</option>
-                        	<option value="racoon">Racoongirl 🐱 洗熊耳</option>
-                        	<option value="mouse">Mousegirl 🐱 鼠耳</option>
+						<label>Kemonomimi:</label><br>
+						<select id="dropdown" name="kemonomimi" onchange="blur()">
+                    		<option value="cat" checked>Catgirl 🐱 猫耳</option>
+                    		<option value="fox">Foxgirl 🐱 狐耳</option>
+                    		<option value="wolf">Wolfgirl 🐱 狼耳</option>
+                    		<option value="dog">Doggirl 🐱 犬耳</option>
+                    		<option value="racoon">Racoongirl 🐱 洗熊耳</option>
+                    		<option value="mouse">Mousegirl 🐱 鼠耳</option>
 							<option value="other">Other 🐱 他</option>
 						</select>
                         <br>
